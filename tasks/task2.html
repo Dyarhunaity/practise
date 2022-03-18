@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .center {
+        text-align: center;
+    }
+
+    .center-ish {
+        padding:20px;
+        
+
+    }
+    
+    div,
+select {
+  margin: 8px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+   <div class="center">
+   <h1>Employee Interests Survey Form</h1>
+   </div>
+
+   <div class="center-ish" style="margin-left: 500px;">
+    <form action="/action_page.php">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="username">Enter your department:</label>
+        <input type="text" id="lname" name="lname"><br>
+   </div>
+   <div class="resize" style="margin-left:400px ;">
+   <form action="/action_page.php">
+   Tell us a little about yourself <textarea name="message" rows="10" cols="30"></textarea>
+    <br><br>
+  </form>
+</div>
+    
+<div class="check" style="margin-left:500px ;">
+ do you exercise at home?  <input type="radio" name="my-input" id="yes">
+    <label for="yes">Yes</label>
+  
+    <input type="radio" name="my-input" id="no">
+    <label for="no">No</label>
+    <br>
+    <p>How do you like to read about your favorite topics? </p>
+    <form>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Books
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Online Resources
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="">Phone apps
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="">Magazines
+          </label>
+      </form>
+  
+
+  <form action="/action_page.php">
+    <label for="cars">What genre of movies do you like ?:</label>
+    <select id="cars" name="cars">
+      <option value="Comedy">Comedy</option>
+      <option value="Action">Action</option>
+      <option value="Drama">Drama</option>
+      <option value="Romance">Romance</option>
+    </select>
+    
+  </form>
+  
+  <button>Submit form</button>
+  </div>
+</body>
+</html>
